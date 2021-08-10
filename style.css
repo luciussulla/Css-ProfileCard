@@ -1,0 +1,149 @@
+* {
+  padding: 0; 
+  margin: 0; 
+}
+
+.container {
+  font-family: 'Josefin Sans', sans-serif; 
+  height: 100vh; 
+  width: 100%; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
+               url('images/bg.jpg') no-repeat center; 
+}
+
+.card-wrapper {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 560px; 
+  width: 430px; 
+  position: absolute; 
+  top: 50%;   
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
+              url('images/bg.jpg') no-repeat center; 
+  transition: box-shadow 1s ease;                
+}
+
+.card-wrapper:hover {
+  box-shadow: 0 0 30px #fff; 
+}
+
+.card {
+  /* display: none;  */
+  height: 100%;
+  width: 100%; 
+  border-radius: inherit;
+
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(190deg,
+                    rgba(21,199,30,.8) 50% , 
+                    rgba(233, 67, 67,.8) 50%
+  );  
+}
+
+img.card-img {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 15px; 
+  border: 1px solid #fff; 
+  padding: 10px; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.card-heading {
+  font-family: 'Source Code Pro', monospace; 
+  font-size: 25px; 
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #Fff; 
+  letter-spacing: 3px;
+  background: linear-gradient(#0a9752, #06831b);
+  width: 70%; 
+  text-align: center; 
+  padding: 5px 0; 
+  transform: perspective(1000px) skew(-20deg) rotateY(40deg);
+}
+
+.card-paragraph {
+  position: relative; 
+  width: 80%; 
+  text-align: justify;
+  color: #fff; 
+  font-size: 16px; 
+  /* text-indent: 40px; */
+}
+
+.card-paragraph::first-letter {
+  margin-left: 30px; 
+}
+
+.card-paragraph i {
+  font-size: 25px; 
+  font-style: italic; 
+  color: #fff; 
+  position: absolute; 
+  
+}
+
+.card-paragraph i:first-child {
+  position: absolute; 
+  top: -15px; 
+}
+
+.card-paragraph i:last-child {
+  position: absolute; 
+  bottom: -15px; 
+}
+
+.card-icons {
+  list-style: none;
+  width: 50%; 
+
+  display: flex; 
+  justify-content: space-between;
+}
+
+.card-icon-link {
+  border: 1px solid #fff; 
+  border-radius: 5px;
+  width: 30px; 
+  height: 30px; 
+  text-decoration: none;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon-link i {
+  color: #fff; 
+  font-size: 20px;
+  transition: all 1s ease;
+}
+
+.card-icon-link:hover i {
+  color: rgb(21,200,30);
+}
+
+.card-btn {
+  display: block; 
+  margin-bottom: 20px; 
+  width: 150px; 
+  height: 35px; 
+  outline: none; 
+  border: none; 
+  text-transform: uppercase;
+  background: linear-gradient(rgb(255,255,255), rgb(160, 160, 160));
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.8);
+  transition: all .1s linear;
+}
+.card-btn:hover {
+  transform: scale(.95);
+}
